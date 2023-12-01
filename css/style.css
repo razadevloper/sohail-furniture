@@ -1083,6 +1083,12 @@ nav {
     gap: 30px;
 }
   /* main */
+.ourprdctsec .verticletabsec .tab-content .product-frst{
+    transition: 0.3s ease;
+}
+.ourprdctsec .verticletabsec .tab-content .product-frst:hover{
+    transform: translate(0, -15px);
+}
   
   
   
