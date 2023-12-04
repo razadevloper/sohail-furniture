@@ -282,6 +282,9 @@
     display: flex;
     justify-content: center;
   }
+  .nav2 .menu {
+    margin-top: -12px;
+  }
 
   .baricon {
     margin-top: -50px;
