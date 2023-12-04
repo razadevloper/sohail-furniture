@@ -58,7 +58,43 @@
                 <div class="row">
                     <div class="col-md-2">
                         <div class="baricon">
-                            <a href="#/"><i class="bi bi-list"></i></a>
+                            <div class="menu-wrapper show">
+                                <div class="menu-icon-wrapper">
+                                    <a href="" class="menu-icon active"></a>
+                                </div>
+                                <ul class="menu">
+                                    <li><a href="#"> All Chair</a></li>
+                                    <li><a href="#"> All Sofa</a></li>
+                                    <li><a href="#"> Living Room</a></li>
+                                    <!-- <li><a>Living Room <span class='cavet'>
+                                                <i class="fas fa-caret-right"></i>
+                                            </span></a>
+                                        <ul>
+                                            <li><a href=""><i class="fas fa-mobile"></i> Bootstrap</a></li>
+                                            <li><a href=""><i class="fas fa-glasses"></i> Semantic UI</a></li>
+                                        </ul>
+                                    </li> -->
+                                    <li><a href="#"> Kitchen Furniture</a></li>
+                                    <li><a href="#"> Office Furniture</a></li>
+                                    <!-- <li>
+                                        <a><i class="fab fa-js"></i> Javascript <span class='cavet'><i
+                                                    class="fas fa-caret-right"></i></span></a>
+                                        <ul>
+                                            <li><a href=""><i class="fab fa-vuejs"></i> Vue</a></li>
+                                            <li>
+                                                <a><i class="fab fa-react"></i> React <span class='cavet'><i
+                                                            class="fas fa-caret-right"></i></span></a>
+                                                <ul>
+                                                    <li><a href=""><i class="fas fa-mobile"></i> React Native</a></li>
+                                                    <li><a href=""><i class="fas fa-glasses"></i> React Augmented</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href=""><i class="fab fa-angular"></i> Angular</a></li>
+                                        </ul>
+                                    </li> -->
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-10">
@@ -86,7 +122,7 @@
                                     <div class="menu showbtn">
                                         <i class="fa-solid fa-bars "></i>
                                     </div>
-                                    
+
                                     <!-- <div>
                                         <ul>
                                             <li><a href="#">Home</a></li>
@@ -138,7 +174,7 @@
         </div>
     </header>
     <section class="banner">
-        <div class="container" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="herohdng">
@@ -175,7 +211,7 @@
 
     <section class="iconsec py-5">
         <div class="container">
-            <div class="row" data-aos="zoom-in-down" data-aos-duration="2000">
+            <div class="row">
                 <div class="col-md-4">
                     <div class="caricon">
                         <img src="images/icon/icon3.png" alt="">
@@ -219,7 +255,7 @@
     <!-- ---------Fetures Section start--------- -->
 
     <section class="feturessec">
-        <div class="container" data-aos="zoom-in-up" data-aos-duration="2000">
+        <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="fatures-main">
@@ -258,7 +294,7 @@
     <section class="ourprdctsec py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-6"  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">
+                <div class="col-md-6">
                     <div class="prdctmain">
                         <div class="row">
                             <div class="col-md-6">
@@ -278,14 +314,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6" data-aos="zoom-in-up" data-aos-duration="2000">
+                <div class="col-md-6">
                     <div class="newarivals">
                         <h1>New Arrivals</h1>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6"  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">
+                <div class="col-md-6">
                     <div class="prdctcntnt">
                         <p>New arrivals is a term often used in
                             the retail industry to refer to the latest
@@ -297,7 +333,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6" data-aos="zoom-in-up" data-aos-duration="2000">
+                <div class="col-md-6">
                     <div class="prdctmain-two">
                         <div class="row">
                             <div class="col-md-6">
@@ -503,7 +539,7 @@
     <section class="creativitysec">
         <div class="container">
             <div class="row">
-                <div class="col-md-4" data-aos="zoom-out-up" data-aos-duration="1500">
+                <div class="col-md-4">
                     <div class="creativehdng">
                         <h1>What you need </h1>
                         <h1>we best for </h1>
@@ -548,7 +584,7 @@
     <section class="reviewsec">
         <div class="container">
             <div class="row">
-                <div class="col-md-6" data-aos="zoom-out-up" data-aos-duration="2000">
+                <div class="col-md-6">
                     <div class="reviewhdng">
                         <p><i class="bi bi-quote"></i></p>
                         <h1>Rated by <br> Clients on Our <br>Products</h1>
@@ -631,7 +667,7 @@
 
     <section class="footersec">
         <div class="container">
-            <div class="row pb-5 pt-5"  data-aos="fade-up" data-aos-duration="2500">
+            <div class="row pb-5 pt-5">
                 <div class="col-md-3">
                     <div class="newsbtn">
                         <h1>Subscribe to our News letter</h1>
@@ -759,6 +795,57 @@
                 }
             }
         })
+    </script>
+    <script>
+        $(".menu li").click(function (event) {
+            event.stopPropagation(); //stop trigger parent
+            var el = $(this).parents("li").siblings();
+            el = el.length == 0 ? $(this).siblings() : el;
+            el.find(".active").addBack().removeClass("active");
+
+            if ($(this).hasClass("active")) {
+                $(this).find(".active").addBack().removeClass("active");
+            } else {
+                $(this).addClass("active");
+            }
+        });
+
+        // responsive menu for mobile and tablet
+        var responsive = function () {
+            var s = 500;
+            $(window).resize(function () {
+                windowSize(s);
+            });
+            windowSize(s);
+        }
+
+        var windowSize = function (s) {
+            var w = $(window).width();
+            if (w <= s) {
+                $(".menu-icon").removeClass("active");
+                $(".menu-wrapper").addClass("hide").removeClass("show");
+            } else {
+                $(".menu-icon").addClass("active");
+                $(".menu-wrapper").addClass("show").removeClass("hide");
+            }
+        }
+
+        responsive();
+
+        $(".menu-icon").click(function (e) {
+            e.preventDefault();
+            $(this).toggleClass("active");
+
+            //set default
+            //$(this).parents(".menu-wrapper").addClass("hide").removeClass("show");
+
+            if ($(this).hasClass("active")) {
+                $(this).parents(".menu-wrapper").addClass("show").removeClass("hide");
+
+            } else {
+                $(this).parents(".menu-wrapper").addClass("hide").removeClass("show");
+            }
+        });
     </script>
     <script>
         Array.from(document.getElementsByClassName("showbtn")).map((btn) => {
