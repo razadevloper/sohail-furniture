@@ -778,7 +778,7 @@ header .login-btn a.active {
     font-size: 45px;
     position: absolute;
     bottom: 170px;
-    right: 35px;
+    right: 70px;
     color: var(--secondary-color) !important;
 }
 
